@@ -228,9 +228,9 @@ Heap은 완전이진트리 구조입니다. Heap이 되기 위한 조건은 다�
 
 - 구현의 편의를 위해 array의 0번 째 index는 사용하지 않습니다.
 - 완전이진트리의 특성을 활용하여 array의 index만으로 부모 자식간의 관계를 정의.
-    - $n$번 째 node의 left child node = $2n$
-    - $n$번 째 node의 right child node = $2n+1$
-    - $n$번 째 node의 parent node = $n/2$
+    - n번 째 node의 left child node = 2n
+    - n번 째 node의 right child node = 2n+1
+    - n번 째 node의 parent node = n/2
 
 ![](https://velog.velcdn.com/images/tlsgn8483/post/af21d292-e991-4b9f-aef7-93132f3f130c/image.png)
 
@@ -239,10 +239,10 @@ Heap은 완전이진트리 구조입니다. Heap이 되기 위한 조건은 다�
 
 heap tree의 높이는 logN
 
-`push()` 를 했을 때, swap하는 과정이 최대  $logN$번 반복되기 때문에 시간복잡도는  O(logn)
+`push()` 를 했을 때, swap하는 과정이 최대  `logN`번 반복되기 때문에 시간복잡도는  `O(logn)`
 
 
-### Heap pop - $O(logn)$
+### Heap pop - `O(logn)`
 
 `pop()`을 했을 때, swap하는 과정이 최대  $logN$번 반복되기 때문에 시간복잡도는  O(logn)
 
@@ -265,7 +265,7 @@ heap tree의 높이는 logN
 
 어느 node를 선택하든 해당 node의 left subtree에는 그 node의 값보다 작은 값들을 지닌 node들로만 이루어져 있고, node의 right subtree에는 그 node의 값보다 큰 값들을 지닌 node들로만 이루어져 있는 binary tree
 
-검색과 저장, 삭제의 시간복잡도는 모두 O(logn)이고, worst case는 한쪽으로 치우친 tree가 됐을 때 $O(n)$
+검색과 저장, 삭제의 시간복잡도는 모두 `O(logn)`이고, worst case는 한쪽으로 치우친 tree가 됐을 때 `O(n)`
 
 **[** 🍯 **TIP]**
 
